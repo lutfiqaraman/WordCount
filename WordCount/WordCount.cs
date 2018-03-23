@@ -8,13 +8,6 @@ namespace WordCount
 {
     class WordCount
     {
-        string sentence;
-
-        public WordCount(string inputstring)
-        {
-            sentence = inputstring;
-        }
-
         public int GetNumberofWords(string sentence)
         {
             string[] splitsentence = sentence.Split(' ');
