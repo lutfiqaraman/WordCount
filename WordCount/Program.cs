@@ -10,6 +10,13 @@ namespace WordCount
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Plase input your sentence");
+            string str = Console.ReadLine();
+
+            WordCount sentence = new WordCount(str);
+            
+            Console.WriteLine("Number of words = {0}", sentence.GetNumberofWords(str));
+            Console.ReadKey();
         }
     }
 }
